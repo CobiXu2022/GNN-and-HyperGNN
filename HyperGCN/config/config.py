@@ -14,7 +14,7 @@ split: train-test split used for the dataset
 '''
 mediators = False
 fast = False
-split = 0
+split = 1
 
 
 
