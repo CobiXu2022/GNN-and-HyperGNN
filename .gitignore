@@ -1,0 +1,171 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Data files and datasets
+data/
+dataset/
+datasets/
+*.csv
+*.tsv
+*.parquet
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+
+# Model files
+saved_models/
+models/*.pt
+models/*.pth
+models/*.ckpt
+*.pt
+*.pth
+*.ckpt
+*.pth.tar
+checkpoints/
+
+# Training outputs
+runs/
+logs/
+*.log
+metrics/
+training_metrics/
+jsonfile/
+*.tfevents.*
+events.out.tfevents.*
+
+# Visualization outputs
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.html
+*.mp4
+*.avi
+*.pdf
+visualization/
+visualize/
+
+# Results and outputs
+results/
+output/
+dblp_results/
+pubmed_results/
+*_results/
+labels/
+saved_labels_*.pt
+
+# Compressed files
+*.zip
+*.tar.gz
+*.tar
+*.gz
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+# Note: Jupyter notebooks are kept but should be cleaned of large outputs before committing
+
+# Configuration files with sensitive data
+config_local.yaml
+.env
+.env.local
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+# Large JSON files (keep small config files)
+# Ignore metrics and large data JSON files
+*_metrics.json
+*metrics.json
+graph_data.json
+subgraph_data.json
+training_metrics.json
+!config.json
+!package.json
+!requirements.txt
+
+# TensorBoard and MLflow
+*.tfevents.*
+events.out.tfevents.*
+mlruns/
+
+# Git internal files (if any)
+.git/objects/pack/
+
+# Specific project ignores
+# AML
+AML/data/processed/
+AML/data/processed*/
+AML/visualization/
+
+# aml-elliptic-gnn
+aml-elliptic-gnn/data/column_distribution/
+aml-elliptic-gnn/data/*.csv
+aml-elliptic-gnn/data/*.png
+aml-elliptic-gnn/data/*.html
+aml-elliptic-gnn/data/*.mp4
+aml-elliptic-gnn/data/*.json
+aml-elliptic-gnn/lib/
+aml-elliptic-gnn/saved_models/
+aml-elliptic-gnn/runs/
+aml-elliptic-gnn/metrics/
+
+# HyperGCN
+HyperGCN/data/coauthorship/
+HyperGCN/data/cocitation/
+HyperGCN/data/datasets/
+HyperGCN/saved_labels_*.pt
+HyperGCN/*.png
+HyperGCN/*.json
+HyperGCN/visualize/
+
+# UniGNN
+UniGNN/data/
+UniGNN/labels/
+UniGNN/runs/
+UniGNN/*_results/
+UniGNN/*_metrics_features.tar.gz
+UniGNN/GAT_*/
+UniGNN/GCN_*/
+UniGNN/GCNII_*/
+UniGNN/GIN_*/
+UniGNN/SAGE_*/
+
