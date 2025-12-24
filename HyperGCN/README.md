@@ -144,28 +144,6 @@ You can also create YAML configuration files in `config/` directory (e.g., `conf
 python hypergcn.py -c config/datasets.yml
 ```
 
-## Troubleshooting
-
-### Common Issues
-
-1. **"split + X does not exist"**
-   - Check available splits: `ls data/{data}/{dataset}/splits/`
-   - Update `split` in `config/config.py` or use `--split` argument
-
-2. **CUDA out of memory**
-   - Reduce batch size (if applicable)
-   - Use a smaller dataset
-   - Set `cuda = False` in config to use CPU
-
-3. **ModuleNotFoundError: No module named 'torch_scatter'**
-   - Install PyTorch Geometric extensions matching your PyTorch version
-   - Check PyTorch version: `python -c "import torch; print(torch.__version__)"`
-   - Install from matching wheel: `pip install torch-scatter -f https://data.pyg.org/whl/torch-{version}.html`
-
-4. **Dataset not found**
-   - Ensure data directory structure matches the required format
-   - Check that `data/{data}/{dataset}/` contains `features.pickle`, `hypergraph.pickle`, `labels.pickle`, and `splits/` directory
-
 ## Scripts
 
 - `hypergcn.py` - Simple training script (single model)
